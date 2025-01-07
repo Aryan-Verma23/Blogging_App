@@ -1,15 +1,18 @@
 package com.aryan.blog.services.impl;
 
 import java.util.List;
+
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.aryan.blog.entities.User;
 import com.aryan.blog.payloads.UserDto;
 import com.aryan.blog.repositories.UserRepo;
 import com.aryan.blog.services.UserService;
 import com.aryan.blog.exceptions.*;
+@Service
 public class UserServiceImpl implements UserService {
 	
 	
