@@ -19,6 +19,7 @@ The Blog Application is a RESTful API built with Spring Boot. It provides functi
 - **Hibernate**: ORM tool for database operations
 - **MySQL**: Database for data persistence
 - **Lombok**: Simplifies boilerplate code for models
+- **POSTMAN**: A Comprehensive set of API tools 
 
 ## Project Structure
 ```
