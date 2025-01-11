@@ -65,6 +65,9 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	public User dtotoUser(UserDto userDto) {
+		
+		//we can use model mapper too using bean and model mapper library
+		//for converting one object to another
 		User user=new User();
 		user.setId(userDto.getId());
 		user.setName(userDto.getName());
