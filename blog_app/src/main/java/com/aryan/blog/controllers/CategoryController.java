@@ -17,7 +17,6 @@ import com.aryan.blog.payloads.APIresponse;
 import com.aryan.blog.payloads.CategoryDto;
 import com.aryan.blog.services.CategoryService;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
@@ -56,7 +55,7 @@ public class CategoryController {
 		return new ResponseEntity<CategoryDto>(categoryDto,HttpStatus.OK);
 	}
 	
-	@GetMapping("/{catId}")
+	@GetMapping("/")
 	public ResponseEntity<List<CategoryDto>> getCategories() {
 	List<CategoryDto> categories = this.categoryService.getCategories();
 		return ResponseEntity.ok(categories);
